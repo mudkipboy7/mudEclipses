@@ -1,0 +1,32 @@
+{
+	// This is an example system initializer, don't worry, you can use comments in the same way Java does it
+	// The systems are geocentric-tychonic
+
+	// Valid values: Radians, Degrees, Turns, Arcseconds
+	// This example file assumes degrees, and if this isn't set it'll assume degrees
+	"angle_unit": "degrees",
+
+
+	// The actual system's planets are placed here
+	"system": {
+		// A celestial Body, every name must be unique or it will crash
+		"sun": {
+			// The size, in degrees of the total sky size, at distance of 1
+			"size": 1.0,
+			// The percentage of the brightness in the system that this contributes to the overall system brightness.
+			//If set to zero or not set at all its not considered a light source
+			"brightness": 1.0,
+			// The semi major axis, (orbial radius) of the body, 1 will result in a distance of one asuming its orbiting around the origin.
+			"SMA": 1.0,
+			// How many degrees its orbit is inclined
+			"incline": 90.0,
+			// The Longitude of Acending Node (Ω), just look it up to figure out what it does
+			"LAN": 90,
+			// How many degrees it moves per tick (remember a day is 24000 ticks)
+			"speed": 0.015,
+			// How many degrees ahead (or behind) of 0 it will be when the world is on tick 0
+			"head-start": 180.0
+		}
+
+	}
+}
