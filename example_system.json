@@ -21,7 +21,7 @@
 			// How many degrees its orbit is inclined
 			"incline": 90.0,
 			// The Longitude of Acending Node (Ω), just look it up to figure out what it does
-			"LAN": 90,
+			"LOAN": 90,
 			// How many degrees it moves per tick (remember a day is 24000 ticks)
 			"speed": 0.015,
 			// How many degrees ahead (or behind) of 0 it will be when the world is on tick 0
